@@ -17,7 +17,7 @@ console.log(boy.name, boy.surname, boy.birthdate, boy.himself.class, boy.himself
 
 
 
-
+/* 
 let cars = [ 
     {
       
@@ -130,7 +130,7 @@ let cars = [
         
     
     
-]
+] */
 
 
 // let cars_price = [100000, 500000, 145000, 37000,  20000, 10000,  40000, 14000,  ]
@@ -257,7 +257,7 @@ console.log(arr, types);
  */
 
 
-let discount = prompt("Сколько сделать скидку")
+/* let discount = prompt("Сколько сделать скидку")
 
 for(let item of cars) {
     let atveti = item.price - ((item.price / 100) * discount)
@@ -267,11 +267,33 @@ for(let item of cars) {
 }
 
 
+*/
 
 
+/* let pwd = 7777
+let question
+do{
+    question = prompt('Введите пароль')
+
+}while (question != pwd); */
 
 
-
-
-
-
+let parol = 7777
+let user;
+let number = 0;
+let min = 0
+let max = 5
+do {
+  user = prompt('Веведите пароль');
+  number++
+ if(user != parol) {
+  if(min >= max) {
+    alert('Слишком много попыток, пожалуйста повтроите позже')
+  }
+ }
+}while (user != parol && min > max)
+if(user != parol) {
+    alert('Error');
+}else{
+    alert('Pass');
+}
