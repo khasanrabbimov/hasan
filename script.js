@@ -281,19 +281,19 @@ do{
 let parol = 7777
 let user;
 let number = 0;
-let min = 0
-let max = 5
+min = 0
+max = 5
 do {
   user = prompt('Веведите пароль');
-  number++
- if(user != parol) {
-  if(min >= max) {
-    alert('Слишком много попыток, пожалуйста повтроите позже')
+  min++
+ if(user !== parol) {
+  if(min < max) {
+    alert('Error')
   }
  }
 }while (user != parol && min > max)
-if(user != parol) {
-    alert('Error');
+if(user != pwd) {
+    alert('Слишком много попыток, пожалуйста повтроите позже');
 }else{
     alert('Pass');
 }
